@@ -1,0 +1,14 @@
+version: 1
+applications:
+  - appRoot: frontend
+    frontend:
+      phases:
+        build:
+          commands:
+            - sed -i "s|__API_ENDPOINT__|$API_ENDPOINT|g" js/counter.js
+      artifacts:
+        baseDirectory: .
+        files:
+          - '**/*'
+      cache:
+        paths: []
