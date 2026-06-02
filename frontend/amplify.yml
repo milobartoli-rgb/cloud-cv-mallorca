@@ -3,9 +3,9 @@ frontend:
   phases:
     build:
       commands:
-        - sed -i "s|__API_ENDPOINT__|$API_ENDPOINT|g" frontend/js/counter.js
+        - sed -i "s|__API_ENDPOINT__|$API_ENDPOINT|g" js/counter.js
   artifacts:
-    baseDirectory: frontend
+    baseDirectory: .
     files:
       - '**/*'
   cache:
