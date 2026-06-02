@@ -1,0 +1,32 @@
+# =====================================================
+# Cloud CV Mallorca - Variables de desplegament
+# =====================================================
+# Copia aquest fitxer a terraform.tfvars i omple els valors
+# =====================================================
+
+project_name = "cloud-cv-mallorca"
+
+environment = "prod"
+
+aws_account_id = "440437079595"
+
+aws_region = "us-east-1"
+
+# Repositori GitHub (públic)
+github_repository = "https://github.com/PauMas7406/cloud-cv-mallorca"
+
+# Token de GitHub (obligatori per Amplify)
+# Genera'l a: GitHub Settings > Developer settings > Personal access tokens > Tokens (classic)
+# Àmbits necessaris: repo, admin:repo_hook
+github_token = ""
+
+lambda_timeout = 10
+lambda_memory  = 128
+
+log_retention_days = 14
+
+additional_tags = {
+  Course = "ASIX"
+  Year   = "2025"
+  Project = "Mallorca"
+}

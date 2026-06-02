@@ -1,0 +1,23 @@
+# Terraform
+.terraform/
+terraform.tfvars
+backend.tf
+lambda_function.zip
+*.tfstate
+*.tfstate.*
+*.backup
+
+# Python
+.venv/
+.venv-*/
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# Guies i documentació (no necessàries per al desplegament)
+*_README.md
+GUIA_*.md
+INFRAESTRUCTURA.md
